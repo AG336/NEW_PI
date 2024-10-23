@@ -192,7 +192,7 @@ To install the software run:
 ```
 cd /var/www
 sudo rm -rf html
-sudo git clone https://github.com/ html
+sudo git clone https://github.com/AGODU/NEW_PI html
 cd html
 sudo chown pi:pi -R . .git *.*
 
