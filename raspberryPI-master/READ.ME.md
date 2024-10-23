@@ -8,7 +8,7 @@ This project provides a basic sructure to control multiple USB and Ethernet devi
 
 ## Context
 
-This project has been developed to control multiple devices as part of a collaboration between the HenLab at MIT Laboratory of Nuclear Science and JLab. This project has been developed by Pedro F. Toledo.
+This project has been developed to control multiple devices as part of a collaboration between the HenLab at MIT Laboratory of Nuclear Science and JLab. This project was developed by Pedro F. Toledo. Changes and updates made by Alexander Garrett at ODU.
 
 This project uses some basic Serial, LXI, Apache and PHP technologies to provide a web-server that allows to centralyze the control of multiple USB and Ethernet devices through a simple web-site. You can go to github to pull the orginial code @ https://github.com/AGODU/raspberryPI 
 ## Extension
@@ -17,7 +17,7 @@ This project has been modularized so it can be eventually used for other purpose
 
 ## How to use this WIKI
 
-Here you will find the information required to set-up this software on your Raspberry Pi. The wiki is divided on 6 sequential stages. If you got questions... do not hesitate to ask!
+Here you will find the information required to set-up this software on your Raspberry Pi. The wiki is made of different sequential stages. If you got questions... do not hesitate to ask!
 
 
 === 00 = Setting Up the RP ===
