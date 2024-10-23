@@ -1,0 +1,20 @@
+
+[Unit]
+Description=laserServer
+After=network.target
+
+[Service]
+ExecStart=/var/www/html/lib/laserServer.py
+WorkingDirectory=/var/www/html
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
+
+# This file needs to be linked with:
+# sudo ln -s laserServer.service /etc/systemd/system/laserServer.service
+# Then you need to update the deamons with
+# sudo systemctl daemon-reload

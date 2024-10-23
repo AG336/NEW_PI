@@ -1,0 +1,625 @@
+
+/* ----------------------------------- */
+/* Diagramation ---------------------- */
+/* ----------------------------------- */
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:   11px;
+    margin:      10px 0px 10px 0px;
+}
+
+/* Level 0 --------------------------- */
+
+#container {
+    width:      100%;
+    height:     100%;
+    display:    table;
+}
+
+#container_cell {
+    width:          100%;
+    height:         100%;
+    display:        table-cell;
+    text-align:     center;
+    vertical-align: middle;
+}
+
+/* Level 1 --------------------------- */
+
+#panel {
+    display:    inline-block;
+    position:   relative;
+    padding:    0px;
+    margin:     auto;
+    width:      1204px;
+    height:     452px;
+    background: gainsboro;
+}
+
+#underbar {
+    display:    inline-block;
+    position:   relative;
+    padding:    0px;
+    margin:     0px 10px 0px 10px;
+    width:      1206px;
+    text-align: right;
+}
+
+/* level 2 --------------------------- */
+
+#panel_advanced {
+    position: absolute;
+    bottom:   0px;
+    display:  none;
+}
+
+#panel_loading {
+    display:    inline-block;
+    position:   absolute;
+    padding:    0px;
+    top:        0px;
+    bottom:     0px;
+    left:       0px;
+    right:      0px;
+    background: white;
+    border:     1px solid black;
+    z-index:    130;
+}
+
+/* Level 3 --------------------------- */
+
+#loading_table {
+    display: table;
+    width:   100%;
+    height:  100%;
+}
+
+#loading_table_cell {
+    display:        table-cell;
+    width:          100%;
+    height:         100%;
+    vertical-align: middle;
+    text-align:     center;
+}
+
+div.panel_section {
+    display:    block;
+    position:   absolute;
+    padding:    0px;
+    margin:     0px;
+}
+
+#canvas {
+    top:          0px;
+    left:         0px;
+    width:        602px;
+    height:       452px;
+    box-sizing:   border-box;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 1px 1px 1px;
+    z-index:      100;
+    background:   gainsboro;
+}
+
+#operationalcontrol {
+    top:          0px;
+    left:         602px;
+    width:        301px;
+    height:       452px;
+    box-sizing:   border-box;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 1px 1px 0px;
+    z-index:      110;
+    background:   gainsboro;
+}
+
+#queue {
+    top:          0px;
+    right:        0px;
+    width:        301px;
+    height:       452px;
+    box-sizing:   border-box;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 1px 1px 0px;
+    z-index:      120;
+    background:   gainsboro;
+}
+
+#laser {
+    bottom:       0px;
+    left:         0px;
+    width:        602px;
+    height:       451px;
+    box-sizing:   border-box;
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 1px 1px 1px;
+    z-index:      0;  
+}
+
+#generator {
+    bottom:       0px;
+    left:         602px;
+    width:        301px;
+    height:       451px;
+    box-sizing:   border-box;
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 1px 1px 0px;
+    z-index:      10;
+}
+
+#attenuator {
+    bottom:       0px;
+    left:         903px;
+    width:        301px;
+    height:       451px;
+    box-sizing:   border-box;
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 1px 1px 0px;
+    z-index:      20;
+}
+
+/* Level 4 --------------------------- */
+
+div.title {
+    position:   relative;
+    display:    block;
+    top:        0%;
+    left:       0%;
+    width:      100%;
+    height:     25px;
+    background: lightslategray;
+}
+
+div.title_table {
+    display:  table;
+    position: relative;
+    top:      0px;
+    left:     0px;
+    width:    100%;
+    height:   100%;
+}
+
+div.title_table_cell {
+    display:        table-cell;
+    vertical-align: middle;
+    text-align:     center;
+    font-weight:    bold;
+    font-size:      11px;
+    height:         100%;
+}
+
+div.content {
+    position:    absolute;
+    top:         25px;
+    bottom:      0px;
+    left:        0px;
+    right:       0px;
+    padding-top: 2px;
+    text-align:  center;
+}
+
+/* Level 5 --------------------------- */
+
+/* Canvas ---------------------------- */
+
+/* Canvas - Common ------------------- */
+
+div.canvas_menu {
+    position:   absolute;
+    height:     40px;
+    left:       0px;
+    right:      0px;
+    bottom:     0px;
+    padding:    10px 6px 10px 6px;
+    text-align: right;
+}
+
+/* Canvas - Diagram ------------------ */
+
+#canvas_diagram {
+    position:   absolute;
+    top:        0px;
+    bottom:     0px;
+    left:       0px;
+    right:      0px;
+    background: gainsboro;
+    z-index:    140;
+}
+
+#diagram_drawing {
+    position:   absolute;
+    box-sizing: border-box;
+    width:      600px;
+    height:     385px;
+    top:        0px;
+    bottom:     40px;
+    left:       0px;
+    right:      0px;
+    padding:    0px;
+}
+
+/* Canvas - Temperature Plot --------- */
+
+#canvas_temperature {
+    position:   absolute;
+    top:        0px;
+    bottom:     0px;
+    left:       0px;
+    right:      0px;
+    background: white;
+    z-index:    130;
+    display:    none;
+}
+
+#temperature_drawing {
+    position: absolute;
+    top:      0px;
+    bottom:   40px;
+    left:     0px;
+    right:    0px;
+    padding:  20px 25px 0px 25px;
+}
+
+/* Laser ----------------------------- */
+
+#laser_left {
+    position:    absolute;
+    top:         2px;
+    left:        0px;
+    height:      423px;
+    width:       300px;
+}
+
+#laser_right {
+    position:    absolute;
+    top:         2px;
+    right:       0px;
+    height:      423px;
+    width:       300px;
+}
+
+/* Generator ------------------------- */
+
+#generator_ch1 {
+    display:    block;
+    position:   absolute;
+    top:        2px;
+    left:       0px;
+    height:     423px;
+    width:      300px;
+    background: gainsboro;
+    z-index:    40;
+}
+
+#generator_ch2 {
+    display:    block;
+    position:   absolute;
+    top:        2px;
+    left:       0px;
+    height:     423px;
+    width:      300px;
+    background: gainsboro;
+    z-index:    30;
+    display:    none;
+}
+
+/* Queue ----------------------------- */
+
+#script_container {
+    display:    inline-block;
+    overflow-y: auto;
+    width:      262px;
+    height:     368px;
+    box-sizing: border-box;
+    border:     1px solid silver;
+}
+
+#script {
+    width:       100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:   11px;
+}
+
+#script_status_reporting {
+    width:      130px;
+    text-align: center;
+}
+
+#script_status {
+    display:    inline;
+    font-weight: bold;
+}
+
+/* ----------------------------------- */
+/* Elements -------------------------- */
+/* ----------------------------------- */
+
+/* Button ---------------------------- */
+
+button {
+    display:     inline-block;
+    box-sizing:  border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:   11px;
+    padding:     1px;
+    height:      21px;
+    width:       130px;
+    text-align:  center;
+    background:  silver;
+    border:      1px solid silver;
+    margin:      2px 1px 0px 1px;
+}
+
+button.advanced {
+    width:       150px;
+    background:  gainsboro;
+    border:      1px solid black;
+    text-align:  center;
+    margin:      2px 1px 0px 1px;   
+}
+
+button.quarter {
+    width: 64px;
+}
+
+button.full {
+    width: 262px;
+}
+
+button.canvas_menu {
+    width:  82px;
+    margin: 0px 1px 0px 1px;
+}
+
+button.canvas_single {
+    width: 40px;
+}
+
+button.highlight {
+    background: gray;
+}
+
+button.completed {
+    background: darkseagreen;
+}
+
+button:focus {
+    outline: 1px solid steelblue;
+}
+
+button:active {
+    background: olive;
+}
+
+/* Input ----------------------------- */
+
+#I_ATT_DB:read-only,
+#I_ATT_PERCENT:read-only,
+input:disabled {
+    background: moccasin;
+}
+
+input {
+    display:     inline-block;
+    box-sizing:  border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:   11px;
+    padding:     1px;
+    height:      21px;
+    width:       130px;
+    line-height: 17px;
+    border:      1px solid silver;
+    margin:      2px 1px 2px 1px;
+    text-align:  center;
+}
+
+input.info_on,
+input.completed:disabled {
+    background: darkseagreen;
+}
+
+input.info_off {
+    background: salmon;
+}
+
+input.focus {
+    outline: 1px solid steelblue;
+}
+
+input.uncompleted:disabled {
+    background: silver;
+}
+
+input.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+label.inputfile {
+    display:     inline-block;
+    box-sizing:  border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:   11px;
+    padding:     2px 0px 0px 0px;
+    height:      21px;
+    width:       64px;
+    text-align:  center;
+    background:  silver;
+    border:      1px solid silver;
+    margin:      2px 1px 0px 1px;
+}
+
+/* List ------------------------------ */
+
+ul {
+    list-style-type: none;
+    padding:         0px;
+    margin:          0px;
+    width:           100%;
+}
+
+li {
+    display:    inline-block;
+    text-align: center;
+    width:      264px;
+    padding:    0px;
+    height:     23px;
+}
+
+li.title {
+    line-height: 23px;
+    font-weight: bold;
+}
+
+/* Select ---------------------------- */
+
+select {
+    display:     inline-block;
+    box-sizing:  border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:   11px;
+    padding:     1px;
+    height:      21px;
+    width:       130px;
+    line-height: 19px; 
+    border:      1px solid silver;
+    margin:      2px 1px 2px 1px;
+    text-align:  center;
+    background:  white;
+}
+
+select:disabled {
+    background: moccasin;
+}
+
+/* Span ------------------------------ */
+
+span {
+    display:     inline-block;
+    box-sizing:  border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:   11px;
+    padding:     1px;
+    height:      21px;
+    width:       130px;
+    line-height: 19px;
+    border:      1px solid gainsboro;
+    margin:      0px 1px 0px 1px;
+    text-align:  left;
+}
+
+#S_OPE_STA_OPERATIONAL {
+    display:     inline;
+    font-weight: bold;
+}
+
+span.center {
+    text-align: center;
+}
+
+/* Table ----------------------------- */
+
+table {
+    border-collapse: collapse;
+    cursor:          default;
+}
+
+table, tr, td {
+    border:      none;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size:   9px;
+}
+
+tr {
+    height:        17px;
+    padding-top:   2px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid silver;
+}
+
+tr:first-child {
+    text-align:  center;
+    background:  silver;
+    font-weight: bold;
+    border-top:  2px solid silver;
+}
+
+tr:first-child:hover {
+    background: silver;
+}
+
+tr:hover {
+    background: darkseagreen;
+}
+
+td {
+    border-left:  1px solid silver;
+    border-right: 1px solid silver;
+}
+
+td.number {
+    width:       32px;
+    text-align:  center;
+    padding:     0px 2px 0px 4px;
+    border-left: none;
+}
+
+td.time {
+    width:      110px;
+    text-align: center;
+    padding:    0px 2px 0px 2px;
+}
+
+td.action {
+    width:        118px;
+    text-align:   left;
+    padding:      0px 4px 0px 5px;
+    border-right: none;
+}
+
+/* Canvas ---------------------------- */
+
+#system_diagram {
+    width:      502px;
+    height:     252px;
+    border:     1px solid lightslategray;
+    background: white;
+    margin-top: 70px;
+}
+
+/* Canvas elements ------------------- */
+
+rect.on,
+circle.on  {
+    fill: darkseagreen;
+}
+
+circle.warning,
+rect.warning {
+    fill: coral;
+}
+
+line.active {
+    stroke: palegreen;
+}
+
+line.warning {
+    stroke: peachpuff;
+}
+
+text {
+    text-anchor:       middle;
+    dominant-baseline: middle;
+    fill:            black;
+}
