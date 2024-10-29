@@ -46,7 +46,7 @@ ENABLE
 === 01 = Installing Base SW ===
 
 To install the base software required for this application, log in to the RP and run:
-
+```
 First run the update the pi system needs to run first (this takes a little bit of time to happen but will appear next to the bluetooth symbol)
 sudo apt-get update 
 sudo apt-get upgrade
@@ -66,7 +66,7 @@ sudo reboot
 Then reconnect to the RP and run:
 
 sudo snap install lxi-tools
-
+```
 === 02 = Conf. RP Net. Interf. ===
 
 The Raspberry Pi Model B (RP) has both cable connection and wifi connection. For security reasons we will only configure the access through cable.
@@ -240,5 +240,21 @@ laserServer.php
 
 This is the line that needs to be ran to start the laserServer otherwise it won't run 
 
- sudo systemctl start laserServer 
+ sudo systemctl start laserServer
+
+=== 08 = Suggestions on set up ====
+
+install screen and netcat
+Screen will allow you to talk to the devices thought the pi (just need to know the port the device is on)
+Netcat will allow you to talk to the generator.
+
+# Laser
+If using the MLC-03A-DPI laser you will need to have a RS323 cable that connects to a null adaptor.
+
+# Attenuator
+you can use a RS-323 cable with either a prolific chip or an FTDI
+
+# Wave Generator
+For the wave generator. If you want to make sure the connection is correct. you have to use netcat to talk to the device. It will be on port 5025.  
+
 
