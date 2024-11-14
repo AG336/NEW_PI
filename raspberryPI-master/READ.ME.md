@@ -10,7 +10,7 @@ This project provides a basic sructure to control multiple USB and Ethernet devi
 
 This project has been developed to control multiple devices as part of a collaboration between the HenLab at MIT Laboratory of Nuclear Science and JLab. This project was developed by Pedro F. Toledo. Changes and updates made by Alexander Garrett at ODU.
 
-This project uses some basic Serial, LXI, Apache and PHP technologies to provide a web-server that allows to centralyze the control of multiple USB and Ethernet devices through a simple web-site. You can go to github to pull the orginial code @ https://github.com/AG336/raspberryPI 
+This project uses some basic Serial, LXI, Apache and PHP technologies to provide a web-server that allows to centralyze the control of multiple USB and Ethernet devices through a simple web-site. You can go to github to pull the orginial code @ https://github.com/AG336/raspberryPI But updates code can be found @ https://github.com/AG336/NEW_PI
 ## Extension
 
 This project has been modularized so it can be eventually used for other purposes that involve the control centralization of multiple devices through a single tcp/ip link.
@@ -22,9 +22,9 @@ Here you will find the information required to set-up this software on your Rasp
 
 === 00 = Setting Up the RP ===
 
-The [Raspberry Pi](https://www.raspberrypi.org)(RP) is the central controlling unit for the RPControlHub. This set-up currently uses the [Raspberry Pi Model B](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/).
+The [Raspberry Pi](https://www.raspberrypi.org)(RP) is the central controlling unit for the RPControlHub. This set-up currently uses the [Raspberry Pi Model B](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/). 
 
-To start, it is required to install the OS on the device by installing it on a MicroSD card that will be installed on the RP. For this set-up, the Debian based OS named Raspbian has been chosen; therefore, go to the [Raspian Download Page](https://www.raspberrypi.org/downloads/raspbian/) and get the "Raspbian Stretch Lite" version. This will download a `.zip` file to your computer that contains a `.img` file. Unzip to get the `.img` file.
+To start, it is required to install the OS on the device by installing it on a MicroSD card that will be installed on the RP. For this set-up, the Debian based OS named Raspbian has been chosen; therefore, go to the [Raspian Download Page](https://www.raspberrypi.org/downloads/raspbian/) and get the "Raspbian Stretch Lite" version. This will download a `.zip` file to your computer that contains a `.img` file. Unzip to get the `.img` file. Please note that if you are using the OS you will need to install NOOBS. You can install this @ [NOOBS DOWNLOAD](www.canakit.com/downloads/noobs). This will give you a zip file, unzip this file and copy-paste the content inside the NOOBS ZIP file onto the MicroSD card.    
 
 To install the OS on a MicroSD you need to write the `.img` file on it. Take a MicroSD card (at least 8GB total memory, it will be completely erased) and follow the instructions from [here](https://www.raspberrypi.org/documentation/installation/installing-images/README.md): Basically, you will need to start by downloading the software named [Etcher](https://etcher.io/) (It is compatible with Linux, Windows or Mac) and install it on your PC. Connect the MicroSD to your PC and open Etcher, select the `.img` file and the MicroSD and then click on Flash. It will take about 4 minutes to install and validate the installation.
 
