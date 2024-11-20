@@ -15,7 +15,7 @@ import laserServer_message as Message
 def start():
     return vxi11.Instrument("192.168.42.11")
 
-def queue_handler(device, queue, trigger, end, db, timeout=0.5):
+def queue_handler(device, queue, trigger, end, db, timeout=0.02):
     trigger.wait()
     while not end.is_set():
         while len(queue) > 0:
